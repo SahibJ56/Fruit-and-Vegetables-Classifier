@@ -27,7 +27,7 @@ Python | TensorFlow/Keras | OpenCV | NumPy | Matplotlib
    pip install tensorflow opencv-python matplotlib
 
 2. Load model and predict:
-
+   ```bash
   from tensorflow.keras.models import load_model
   model = load_model('fruit_classifier_model.h5')
   img = preprocess_image('path_to_image.jpg')
@@ -35,13 +35,13 @@ Python | TensorFlow/Keras | OpenCV | NumPy | Matplotlib
   print(predicted_class, confidence)
 
 3. Visualize prediction:
-
+   ```bash
   import matplotlib.pyplot as plt
   plt.imshow(img)
   plt.title(f"Prediction: {predicted_class} ({confidence:.2f})")
   plt.show()
 
-Files
+## Files
   
   fruit_classifier_model.h5 – Trained CNN model
   train.py – Model training code
