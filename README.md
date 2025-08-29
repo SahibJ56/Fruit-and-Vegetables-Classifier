@@ -26,27 +26,30 @@ Python | TensorFlow/Keras | OpenCV | NumPy | Matplotlib
    ```bash
    pip install tensorflow opencv-python matplotlib
 
+
 2. Load model and predict:
    ```bash
   from tensorflow.keras.models import load_model
-  ```bash
+  
   model = load_model('fruit_classifier_model.h5')
-  ```bash
+  
   img = preprocess_image('path_to_image.jpg')
-  ```bash
+  
   predicted_class, confidence = predict_class(model, img, class_labels)
-  ```bash
+  
   print(predicted_class, confidence)
+
 
 3. Visualize prediction:
    ```bash
   import matplotlib.pyplot as plt
-  ```bash
+  
   plt.imshow(img)
-  ```bash
+  
   plt.title(f"Prediction: {predicted_class} ({confidence:.2f})")
-  ```bash
+  
   plt.show()
+
 
 ## Files
 
