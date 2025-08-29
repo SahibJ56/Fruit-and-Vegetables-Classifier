@@ -26,7 +26,6 @@ Python | TensorFlow/Keras | OpenCV | NumPy | Matplotlib
    ```bash
    pip install tensorflow opencv-python matplotlib
 
-
 2. Load model and predict:
    ```bash
   from tensorflow.keras.models import load_model
@@ -38,7 +37,6 @@ Python | TensorFlow/Keras | OpenCV | NumPy | Matplotlib
   predicted_class, confidence = predict_class(model, img, class_labels)
   
   print(predicted_class, confidence)
-
 
 3. Visualize prediction:
    ```bash
